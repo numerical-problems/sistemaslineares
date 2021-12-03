@@ -1,0 +1,63 @@
+<HTML>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script language="javascript">
+        var n;
+        function exibe()
+        {
+
+            /*var matriz = [ [1,2,3],
+                            [4,5,6],
+                            [7,8,9] ];
+
+            for(let lin=0 ; lin<3 ; lin++){
+            for(let col=0; col<3 ; col++)
+            document.write(matriz[lin][col] + "  ");
+            
+            document.write("<br />");
+            }*/
+
+            n = form.inputbox.value;
+            n = parseInt(n);
+        
+            document.write("<link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'>");
+            document.write("<form class='w3-container w3-card-4' action='resultgauss' method='post'>");
+            document.write("<h2 class='w3-text-blue'>Metodo de Gauss</h2>");
+            document.write("<input type='hidden' name='n' value='"+n+"'>"); 
+            for (var i = 0; i < n; i++) {
+                document.write("<br>");
+                for (var j = 0; j < n+1; j++) {
+                    document.write("<input class='numeros' type='number' name='array[]' />");
+                }
+            }
+            document.write("<br><br><p><input class='w3-btn w3-blue' type='submit' value='Visualizar Resultado'></p>");
+            document.write("</form>");
+        }
+
+        /*function myFunction() {
+            var elements = document.getElementsByClassName("numeros");
+            let a = Array.from(new Array(n), _ => Array(n+1).fill(0));
+            var k = 0;
+
+            for (var i = 0; i < n; i++) {
+                for (var j = 0; j < n+1; j++) {
+                    a[i][j]=elements[k].value;
+                    k++;
+                }
+            }
+
+            alert(a);
+
+        }*/
+    </script>
+
+    <form class="w3-container w3-card-4" name="form" action="" method="GET">
+        <h2 class="w3-text-blue">Metodo de Gauss</h2>
+        <p><label class="w3-text-blue">Adicione a quantidade</label> (A quantidade é a matriz A ao quadrado, e uma coluna adicional serve para matriz B): </p>
+        <p>
+        <input type="number" class="w3-input w3-border" name="inputbox" ></p>
+        <p>
+        <input type="submit" class="w3-btn w3-blue" name="button" value="Continuar" onClick="exibe()"></p>
+    </form>
+</HTML>

@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+<div class="w3-container w3-blue">
+    <h2>MÉTODOS DIRETOS</h2>
+</div>
+<br>
+<div id="wrapper">
+<form method="get" action="gauss">
+    <button class="w3-btn w3-blue" type="submit">Metodo de Gauss</button><br>
+</form>
+</div>
+<!--<form method="get" action="pivotacao">
+    <button type="submit">Metodo de Pivotação Completa</button><br>
+</form>-->
+<div id="wrapper">
+<form method="get" action="jordan">
+    <button class="w3-btn w3-blue" type="submit">Metodo de Jordan</button><br>
+</form>
+</div>
+<br>
+<div class="w3-container w3-blue">
+    <h2>MÉTODOS INTERATIVOS</h2>
+</div>
+<br>
+
+<div id="wrapper">
+    <form method="get" action="jacobi">
+        <button class="w3-btn w3-blue" type="submit">Metodo de Jacobi</button><br>
+    </form>
+</div>
+<div id="wrapper">
+    <form method="get" action="gaussseidel">
+        <button class="w3-btn w3-blue" type="submit">Metodo de Gauss-Seidel</button><br>
+    </form>
+</div>
+<br>
